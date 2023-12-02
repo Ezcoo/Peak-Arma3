@@ -22,11 +22,15 @@ echo - Copying common resources (Rsc)...
 
 xcopy "%destinationpath%\%missionfolder%\rsc\common" "%repopath%\%missionfolder%\rsc\common" /E /S /Y /I
 
-echo - Copying main init files...
+echo - Copying common init files...
 
 xcopy "%destinationpath%\%missionfolder%\initPlayerLocal.sqf" "%repopath%\%missionfolder%\initPlayerLocal.sqf" /Y /-I
 
 xcopy "%destinationpath%\%missionfolder%\initPlayerServer.sqf" "%repopath%\%missionfolder%\initPlayerServer.sqf" /Y /-I
+
+echo - Copying map specific resources (Rsc) for map %mapname%...
+
+xcopy "%destinationpath%\%missionname%.%mapname%\rsc\mapSpecific" "%repopath%\%missionfolder%\rsc\mapSpecific" /E /S /Y /I
 
 echo - Copying mission (SQM) file for map %mapname%...
 
