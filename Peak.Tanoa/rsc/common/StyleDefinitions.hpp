@@ -32,4 +32,3 @@
 #define LB_MULTI				0x20
 #define TR_SHOWROOT				1
 #define TR_AUTOCOLLAPSE			2
-#define CT_MAP                  100
