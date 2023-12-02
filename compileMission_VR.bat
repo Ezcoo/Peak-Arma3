@@ -12,6 +12,12 @@ set "missionfolder=%missionname%.%mapname%"
 
 echo --- Mission will be prepared for Git at: "%repopath%\%missionfolder%"
 
+echo ****************************************************************************
+echo -- Deleting previous/deprecated files in the repository folder for map %mapname%...
+echo ****************************************************************************
+
+rmdir /S "%repopath%\%missionfolder%"
+
 echo -- Copying common files to repository folder...
 
 echo - Copying common functions...

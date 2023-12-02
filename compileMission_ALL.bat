@@ -1,2 +1,2 @@
-call buildMission_VR.bat
-call buildMission_Tanoa.bat
+call compileMission_VR.bat
+call compileMission_Tanoa.bat

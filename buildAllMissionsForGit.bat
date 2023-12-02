@@ -1,4 +1,4 @@
-call buildMission_ALL.bat
+call compileMission_ALL.bat
 
 title Build Peak missions from source for Git
 
@@ -9,6 +9,12 @@ set "missionname=Peak"
 
 set "mapname=VR"
 
+echo ***
+echo -- Deleting previous/deprecated files in the repository folder for map %mapname%...
+echo ***
+
+rmdir /S /Q "%repopath%\%missionname%.%mapname%"
+
 echo Building mission for map %mapname%...
 
 xcopy "%destinationpath%\%missionname%.%mapname%" "%repopath%\%missionname%.%mapname%" /E /S /Y /I
@@ -16,6 +22,12 @@ xcopy "%destinationpath%\%missionname%.%mapname%" "%repopath%\%missionname%.%map
 echo Building mission for map %mapname% finished.
 
 set "mapname=Tanoa"
+
+echo ***
+echo -- Deleting previous/deprecated files in the repository folder for map %mapname%...
+echo ***
+
+rmdir /S /Q "%repopath%\%missionname%.%mapname%"
 
 echo Building mission for map %mapname%...
 
