@@ -1,1 +1,1 @@
-#include "Rsc\Dialogs.hpp"
+#include "rsc\common\Dialogs.hpp"
