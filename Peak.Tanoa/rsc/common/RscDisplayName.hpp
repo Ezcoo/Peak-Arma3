@@ -117,7 +117,7 @@ class RscDisplayName
 			w = 12 * pixelW * pixelGrid;
 			h = 9 * pixelH * pixelGrid;
 			sizeEx = 8 * pixelH * pixelGrid;
-			text = "NW";
+			text = "SW";
 			colorBackground[] = {0.2, 0.2, 0.2, 1};
 		};
 		class SpawnMap: RscMapControl
