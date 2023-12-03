@@ -1,1 +1,2 @@
 #include "rsc\common\Dialogs.hpp"
+#include "functions\CfgFunctions.hpp"
