@@ -12,6 +12,16 @@ set "missionfolder=%missionname%.%mapname%"
 
 echo --- Final mission files will be located at: "%repopath%\%missionfolder%"
 
+echo ***
+echo -- Deleting previous/deprecated files in the mission folder for map %mapname%...
+echo ***
+
+rmdir /S /Q "%destinationpath%\%missionname%.%mapname%\functions"
+rmdir /S /Q "%destinationpath%\%missionname%.%mapname%\rsc\common"
+rmdir /S /Q "%destinationpath%\%missionname%.%mapname%\initPlayerLocal.sqf"
+rmdir /S /Q "%destinationpath%\%missionname%.%mapname%\initPlayerServer.sqf"
+
+
 echo -- Copying common files to repository folder...
 
 echo - Copying common functions...
