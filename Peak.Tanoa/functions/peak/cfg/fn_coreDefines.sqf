@@ -1,0 +1,2 @@
+PEAK_cfg_minDistanceBetweenPlayersAtSpawn = 100;
+PEAK_cfg_maxSpawnDistanceFromSpawnLocation = 1000;
