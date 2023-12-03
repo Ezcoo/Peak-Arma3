@@ -2,6 +2,9 @@
 #include "\a3\3DEN\UI\macroexecs.inc"
 #include "StyleDefinitions.hpp"
 
+#define IDC_OK		1 // emulate "OK" button
+#define IDC_CANCEL	2 // emulate "Cancel" button
+
 class RscDisplayName
 {
 	idd = 1500;
