@@ -12,11 +12,11 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=42;
+		nextID=45;
 	};
 	class MarkerIDProvider
 	{
-		nextID=32;
+		nextID=37;
 	};
 	class Camera
 	{
@@ -113,7 +113,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=33;
+		items=36;
 		class Item0
 		{
 			dataType="Group";
@@ -612,6 +612,33 @@ class Mission
 			};
 			id=40;
 			atlOffset=8.1379995;
+		};
+		class Item33
+		{
+			dataType="Marker";
+			position[]={9348.5244,6.0557036,4071.1138};
+			name="spawn_town_1";
+			text=" Moddergat";
+			type="mil_dot";
+			id=42;
+		};
+		class Item34
+		{
+			dataType="Marker";
+			position[]={11223.806,2.0509801,5244.9126};
+			name="spawn_town_2";
+			text=" Harcourt";
+			type="mil_dot";
+			id=43;
+		};
+		class Item35
+		{
+			dataType="Marker";
+			position[]={11669.885,3.0599999,2731.127};
+			name="spawn_town_3";
+			text=" Lijnhaven";
+			type="mil_dot";
+			id=44;
 		};
 	};
 };
