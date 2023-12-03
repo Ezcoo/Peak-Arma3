@@ -11,4 +11,9 @@ private _canSpawn = true;
     }; 
 } forEach _players;
 
+if (_noPlayersNearby) then
+{
+    _canSpawn = true;
+};
+
 _canSpawn;
