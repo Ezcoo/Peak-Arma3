@@ -4,7 +4,7 @@
 
 class RscDisplayName
 {
-	idd = 1234;
+	idd = 1500;
 	class ControlsBackground
 	{
 		class Background: RscText
@@ -29,100 +29,32 @@ class RscDisplayName
 			h = 5 * pixelH * pixelGrid;
 			colorBackground[] = {0, 0.4, 0, 1};
 			style = ST_TITLE + ST_UPPERCASE;
-			text = "GROUP SPAWN SELECTION";
+			text = "SELECT SPAWN LOCATION";
 
 		};
-		class SpawnMapN : RscButton
-		{
-			idc = -1;
-			x = 0.5 - pixelW * pixelGrid * 50;
-			y = 0.5 - pixelH * pixelGrid * 20;
-			w = 12 * pixelW * pixelGrid;
-			h = 9 * pixelH * pixelGrid;
-			sizeEx = 8 * pixelH * pixelGrid;
-			text = "N";
-			colorBackground[] = {0.2, 0.2, 0.2, 1};
-		};
-		class SpawnMapNE : RscButton
-		{
-			idc = -1;
-			x = 0.5 - pixelW * pixelGrid * 35;
-			y = 0.5 - pixelH * pixelGrid * 20;
-			w = 12 * pixelW * pixelGrid;
-			h = 9 * pixelH * pixelGrid;
-			sizeEx = 8 * pixelH * pixelGrid;
-			text = "NE";
-			colorBackground[] = {0.2, 0.2, 0.2, 1};
-		};
-		class SpawnMapE : RscButton
-		{
-			idc = -1;
-			x = 0.5 - pixelW * pixelGrid * 35;
-			y = 0.5 - pixelH * pixelGrid * 8;
-			w = 12 * pixelW * pixelGrid;
-			h = 9 * pixelH * pixelGrid;
-			sizeEx = 8 * pixelH * pixelGrid;
-			text = "E";
-			colorBackground[] = {0.2, 0.2, 0.2, 1};
-		};
-		class SpawnMapSE : RscButton
-		{
-			idc = -1;
-			x = 0.5 - pixelW * pixelGrid * 35;
-			y = 0.5 - pixelH * pixelGrid * -4;
-			w = 12 * pixelW * pixelGrid;
-			h = 9 * pixelH * pixelGrid;
-			sizeEx = 8 * pixelH * pixelGrid;
-			text = "SE";
-			colorBackground[] = {0.2, 0.2, 0.2, 1};
-		};
-		class SpawnMapS : RscButton
-		{
-			idc = -1;
-			x = 0.5 - pixelW * pixelGrid * 50;
-			y = 0.5 - pixelH * pixelGrid * -4;
-			w = 12 * pixelW * pixelGrid;
-			h = 9 * pixelH * pixelGrid;
-			sizeEx = 8 * pixelH * pixelGrid;
-			text = "S";
-			colorBackground[] = {0.2, 0.2, 0.2, 1};
-		};
-		class SpawnMapSW : RscButton
+		class SpawnMapChooseLocationTitle : RscText
 		{
 			idc = -1;
 			x = 0.5 - pixelW * pixelGrid * 65;
-			y = 0.5 - pixelH * pixelGrid * -4;
-			w = 12 * pixelW * pixelGrid;
-			h = 9 * pixelH * pixelGrid;
-			sizeEx = 8 * pixelH * pixelGrid;
-			text = "SW";
-			colorBackground[] = {0.2, 0.2, 0.2, 1};
+			y = 0.5 - pixelH * pixelGrid * 25;
+			w = 40 * pixelW * pixelGrid;
+			h = 5 * pixelH * pixelGrid;
+			text = "Available spawns";
+			colorBackground[] = {0.2, 0.8, 0.2, 0.5};
+			style = ST_CENTER;
 		};
-		class SpawnMapW : RscButton
+		class SpawnLocationSelector : RscListBox
 		{
-			idc = -1;
-			x = 0.5 - pixelW * pixelGrid * 65;
-			y = 0.5 - pixelH * pixelGrid * 8;
-			w = 12 * pixelW * pixelGrid;
-			h = 9 * pixelH * pixelGrid;
-			sizeEx = 8 * pixelH * pixelGrid;
-			text = "W";
-			colorBackground[] = {0.2, 0.2, 0.2, 1};
-		};
-		class SpawnMapNW : RscButton
-		{
-			idc = -1;
+			idc = 10;
 			x = 0.5 - pixelW * pixelGrid * 65;
 			y = 0.5 - pixelH * pixelGrid * 20;
-			w = 12 * pixelW * pixelGrid;
-			h = 9 * pixelH * pixelGrid;
-			sizeEx = 8 * pixelH * pixelGrid;
-			text = "SW";
+			w = 40 * pixelW * pixelGrid;
+			h = 60 * pixelH * pixelGrid;
 			colorBackground[] = {0.2, 0.2, 0.2, 1};
 		};
 		class SpawnMap: RscMapControl
 		{
-			idc = -1;
+			idc = 20;
 			x = 0.5 - pixelW * pixelGrid * 20;
 			y = 0.5 - pixelH * pixelGrid * 37;
 			w = 80 * pixelW * pixelGrid;

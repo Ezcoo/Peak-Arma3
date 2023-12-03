@@ -10,6 +10,13 @@ class CfgFunctions
 	class PEAK
 	{
 
+		class peak
+		{
+
+			class gui_lbSortTest { file = "functions\peak\gui\fn_lbSortTest.sqf"; };
+
+		};
+
 	};
 
 };
