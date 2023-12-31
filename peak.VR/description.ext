@@ -1,2 +1,5 @@
 #include "rsc\common\Dialogs.hpp"
 #include "functions\CfgFunctions.hpp"
+#include "params\params.hpp"
+
+enableDebugConsole = 1;

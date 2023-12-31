@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=5;
+		nextID=6;
 	};
 	class MarkerIDProvider
 	{
@@ -20,9 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6440.4009,30,3059.991};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710671,0.70710683};
+		pos[]={6442.8516,19.314516,3075.199};
+		dir[]={-0.1602003,-0.78733015,0.59535462};
+		up[]={-0.20458078,0.61653161,0.76028645};
+		aside[]={0.96565139,0,0.25984117};
 	};
 };
 binarizationWanted=0;
@@ -30,13 +31,14 @@ sourceName="peak";
 addons[]=
 {
 	"A3_Characters_F_Exp",
-	"A3_Ui_F"
+	"A3_Ui_F",
+	"A3_Characters_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			className="A3_Characters_F_Exp";
@@ -48,6 +50,13 @@ class AddonsMetaData
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -100,7 +109,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4;
+		items=5;
 		class Item0
 		{
 			dataType="Group";
@@ -133,7 +142,7 @@ class Mission
 		class Item1
 		{
 			dataType="Marker";
-			position[]={6175.8789,5,3347.1399};
+			position[]={5020.2588,5,3316.012};
 			name="spawn_town_1";
 			text=" Town 1";
 			type="mil_circle";
@@ -142,7 +151,7 @@ class Mission
 		class Item2
 		{
 			dataType="Marker";
-			position[]={6722.1001,5,3844.4109};
+			position[]={6605.3706,5,4523.3867};
 			name="spawn_town_2";
 			text=" Town 2";
 			type="mil_circle";
@@ -151,11 +160,23 @@ class Mission
 		class Item3
 		{
 			dataType="Marker";
-			position[]={6540.4927,5,3154.8484};
+			position[]={7131.9204,5,2604.2747};
 			name="spawn_town_3";
 			text=" Town 3";
 			type="mil_circle";
 			id=4;
+		};
+		class Item4
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6255.3491,5,3332.363};
+			};
+			name="HeadlessClient_1";
+			isPlayable=1;
+			id=5;
+			type="HeadlessClient_F";
 		};
 	};
 };
